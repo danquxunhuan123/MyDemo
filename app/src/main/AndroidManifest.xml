@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.trs.jjrb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".activity.MainActivity" -->
+        <!-- android:launchMode="singleTask" /> -->
+        <activity android:name=".activity.ListActivity" />
+        <activity android:name=".activity.redian.QuanWangReDianListActivity" />
+        <activity android:name=".activity.redian.WeiBoReDianListActivity" />
+        <activity android:name=".activity.redian.WeiXinReDianListActivity" />
+        <activity android:name=".activity.redian.DiYuReDianListActivity" />
+        <activity android:name=".activity.redian.TouTiaoListActivity" />
+        <activity android:name=".activity.redian.JingJiListActivity" />
+        <activity android:name=".activity.redian.BangDanListActivity" />
+        <activity android:name=".activity.xiansuo.JuJiaoListActivity" />
+        <activity android:name=".activity.xiansuo.WangMinListActivity" />
+        <activity android:name=".activity.xiansuo.ZaiHaiListActivity" />
+        <activity android:name=".activity.xiansuo.RenGongXianSuoActivity" />
+        <activity
+            android:name=".activity.NewsDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activity.PicDetailActivity"
+            android:launchMode="singleTop" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.trs.jjrb.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.xuanti.AddXuanTiActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.xiansuo.TuFaActivity" />
+        <activity
+            android:name=".activity.xiansuo.AddXianSuoActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.RegistActivity" />
+        <activity android:name=".activity.my.CeHuaListActivity" />
+        <activity
+            android:name=".activity.redian.BangDanActivity"
+            android:label="@string/title_activity_bang_dan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.xuanti.XuanTiDetailActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.xiansuo.DuZheBaoLiaoActivity"
+            android:launchMode="singleTop"/>
+    </application>
+
+</manifest>

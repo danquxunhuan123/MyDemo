@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">经济日报</string>
+    <string name="pic_index">%1$d/%2$d</string>
+
+    <string name="tab_title_1">新闻热点</string>
+    <string name="tab_title_2">新闻线索</string>
+    <string name="tab_title_3">报题选题</string>
+    <string name="tab_title_4">选题分析</string>
+    <string name="tab_title_5">我的</string>
+    <string name="title_activity_bang_dan">BangDanActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

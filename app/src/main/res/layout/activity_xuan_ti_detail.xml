@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="基本信息"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expand1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="1000"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <include layout="@layout/layout_jibenxinxi" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="事件跟踪"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expand2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="1000"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <include layout="@layout/layout_sjgz" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <TextView
+                android:id="@+id/tv_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="报道媒体分析"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expand3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="1000"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <include layout="@layout/bdmt_layout" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <TextView
+                android:id="@+id/tv_title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="事件传播力分析"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expand4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="1000"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <include layout="@layout/sjcb_layout" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

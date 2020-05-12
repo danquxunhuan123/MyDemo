@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="焦点脉络"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="第二届中国国际进口博览会希腊国家馆内,国家主席习近平同希腊总理米佐塔基斯一道饶有兴趣地边走边看。习主席赞赏了馆里的展品,比如‘水果与象征"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="事件观点对比"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:layout_width="345dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/u1506" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="事件热词对比"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:layout_width="337dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/u1503" />
+</LinearLayout>
